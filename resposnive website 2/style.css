@@ -257,7 +257,7 @@ header .header-cases {
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px); /*/  100% of the device height */
-  background-image: url("me.jpg");
+  background-image: url("anime-ninja-4k-lo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -347,7 +347,24 @@ footer ul li a {
   width: 100%;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+  footer ul li p {
+    font-family: Catamaran;
+    font-size: 24px;
+    color: white;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
 
+  footer ul {
+
+    padding-right: 30px;
+  }
+
+}
 /************************************/
 /*  Tablette ipad*/
 
@@ -365,14 +382,26 @@ footer ul li a {
     width: 450px;
     margin: 0 auto;
   }
-
+  .index-links  {
+   overflow: hidden;
+  }
   .index-links div {
-    margin: 10px 10px 0;
+    margin: 25px 10px 0;
     width: calc(100% - 32px);
-    height: 100px;
+    height: 220px;
     background-color: grey;
+    float: left;
   }
 
   .index-boxlink-square {
+    width: calc(25% - 20px) !important;
+  }
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+  .index-links div h3 {
+    
+    line-height: 30px;
+    /* text-shadow: 2px 2px 8px #111; */
   }
 }
